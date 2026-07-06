@@ -60,11 +60,7 @@
     }
 
     .badge::before {
-      content: '';
-      width: 6px; height: 6px;
-      border-radius: 50%;
-      background: var(--accent);
-      animation: pulse 2s infinite;
+      content: none;
     }
 
     @keyframes pulse {
@@ -128,16 +124,7 @@
     }
 
     .hero-right::before {
-      content: 'CYBER SÉCURITÉ';
-      font-family: 'DM Serif Display', serif;
-      font-size: 7rem;
-      color: rgba(200, 240, 75, 0.04);
-      position: absolute;
-      top: 50%; left: 50%;
-      transform: translate(-50%, -50%) rotate(-15deg);
-      white-space: pre;
-      line-height: 1;
-      pointer-events: none;
+      content: none;
     }
 
     .stat-grid {
@@ -235,6 +222,7 @@
     .edu-date { font-family: 'DM Mono', monospace; font-size: 0.72rem; color: var(--muted); letter-spacing: 0.08em; }
     .edu-content h3 { font-size: 1rem; font-weight: 500; margin-bottom: 4px; }
     .edu-content .institution { font-size: 0.85rem; color: var(--muted); margin-bottom: 4px; }
+    .edu-content .edu-detail { font-size: 0.82rem; color: #666; line-height: 1.6; margin-top: 6px; }
     .edu-content .location { font-size: 0.78rem; color: #555; }
 
     .loisirs-grid {
@@ -304,74 +292,80 @@
 <!-- HERO -->
 <header>
   <div class="hero-left">
-    <span class="badge">Disponible pour alternance / stage</span>
+    <span class="badge">Disponible pour poursuite d'études &amp; alternance</span>
     <h1>Glyne<br><em>Ngongang</em></h1>
-    <p class="subtitle">Bachelor Cybersécurité · INGETIS Paris</p>
+    <p class="subtitle">Cybersécurité · Systèmes &amp; Réseaux · INGETIS Paris</p>
     <p class="profil-text">
-      Étudiant en Bachelor Cybersécurité, issu d'une classe préparatoire scientifique MP.
-      Solides fondements en mathématiques, algorithmique et sciences de l'ingénieur,
-      appliqués à la sécurité des systèmes d'information et à l'analyse de données.
+      Étudiant en cybersécurité, issu d'une classe préparatoire scientifique MP.
+      Double compétence technique (systèmes, réseaux, SOC) et analytique (data chez Allianz).
+      Fondateur de DAMAVIS, une plateforme SaaS de gestion de réputation en ligne.
     </p>
     <div class="contact-links">
       <a href="tel:+33622200501">+33 6 22 20 05 01</a>
       <a href="mailto:ngongangdjomo@gmail.com">ngongangdjomo@gmail.com</a>
-      <a href="https://www.linkedin.com/in/ngongang-glyne-24920027a" target="_blank">www.linkedin.com/in/ngongang glyne-24920027a</a>
+      <a href="https://www.linkedin.com/in/ngongang-glyne-24920027a" target="_blank">linkedin.com/in/ngongang-glyne</a>
+      <a href="https://github.com/damocles2002/Portfolio1" target="_blank">github.com/damocles2002/Portfolio1</a>
     </div>
   </div>
   <div class="hero-right">
     <div class="stat-grid">
-      <div class="stat"><div class="stat-num">2+</div><div class="stat-label">Expériences Data</div></div>
+      <div class="stat"><div class="stat-num">3+</div><div class="stat-label">Expériences pro</div></div>
       <div class="stat"><div class="stat-num">MP</div><div class="stat-label">Classe Prépa Sci.</div></div>
-      <div class="stat"><div class="stat-num">5+</div><div class="stat-label">Langages maîtrisés</div></div>
-      <div class="stat"><div class="stat-num">IDF</div><div class="stat-label">Île-de-France</div></div>
+      <div class="stat"><div class="stat-num">SOC</div><div class="stat-label">Wazuh · Kali · PKI</div></div>
+      <div class="stat"><div class="stat-num">SaaS</div><div class="stat-label">Fondateur DAMAVIS</div></div>
     </div>
   </div>
 </header>
 
-<!-- 01 — CONNAISSANCES INFORMATIQUES -->
+<!-- 01 — COMPÉTENCES -->
 <section>
   <div class="section-header">
     <span class="section-num">01 —</span>
-    <h2>Connaissances informatiques</h2>
+    <h2>Compétences techniques</h2>
   </div>
   <div class="skills-grid">
     <div class="skill-block">
-      <h4>Langages</h4>
+      <h4>Cybersécurité</h4>
+      <ul>
+        <li>Wazuh SIEM / EDR</li>
+        <li>Pentest (Metasploit, Nmap, Burp Suite)</li>
+        <li>PKI (CA, ECDSA)</li>
+        <li>IDS / IPS · Zero Trust</li>
+        <li>MITRE ATT&amp;CK</li>
+        <li>Pare-feu pfSense</li>
+      </ul>
+    </div>
+    <div class="skill-block">
+      <h4>Systèmes &amp; Réseaux</h4>
+      <ul>
+        <li>Windows Server 2016–2022</li>
+        <li>Active Directory · GPO</li>
+        <li>Linux (Ubuntu, RedHat)</li>
+        <li>TCP/IP · VLAN · VPN · OpenVPN</li>
+        <li>Segmentation réseau</li>
+        <li>Event Viewer · Sysinternals</li>
+      </ul>
+    </div>
+    <div class="skill-block">
+      <h4>Cloud &amp; Virtualisation</h4>
+      <ul>
+        <li>Azure</li>
+        <li>VMware Workstation</li>
+        <li>Oracle Cloud Infrastructure</li>
+        <li>Infra hybride cloud / on-premises</li>
+        <li>Kubernetes</li>
+        <li>Supabase</li>
+      </ul>
+    </div>
+    <div class="skill-block">
+      <h4>Scripting &amp; Data</h4>
       <ul>
         <li>Python (Pandas, PySpark)</li>
-        <li>SQL / SAS</li>
+        <li>PowerShell · Bash</li>
         <li>C / C++</li>
-        <li>Java</li>
-      </ul>
-    </div>
-    <div class="skill-block">
-      <h4>Systèmes & Réseaux</h4>
-      <ul>
-        <li>Windows Server (2000→2022)</li>
-        <li>Linux (RedHat, Ubuntu)</li>
-        <li>TCP/IP, DHCP, VLAN, Firewall</li>
-        <li>Active Directory</li>
-      </ul>
-    </div>
-    <div class="skill-block">
-      <h4>Sécurité & Cloud</h4>
-      <ul>
-        <li>Cybersécurité & Anonymisation</li>
-        <li>Gestion des accès</li>
-        <li>Azure</li>
-        <li>Kubernetes</li>
-        <li>VMware / Proxmox</li>
-      </ul>
-    </div>
-    <div class="skill-block">
-      <h4>Outils</h4>
-      <ul>
+        <li>SQL (MySQL, Oracle) · SAS</li>
         <li>Power BI</li>
-        <li>Oracle SQL Developer</li>
-        <li>Git / GitHub</li>
-        <li>SharePoint</li>
-        <li>Eclipse IDE</li>
-        <li>Excel, Word, PowerPoint</li>
+        <li>Git / GitHub · Kali Linux · Wireshark</li>
       </ul>
     </div>
   </div>
@@ -387,19 +381,37 @@
 
     <div class="exp-item">
       <div class="exp-meta">
+        <div class="exp-date">Mars – Mai 2026</div>
+        <div class="exp-company">INGETIS Paris</div>
+        <div class="exp-location">Paris, France</div>
+      </div>
+      <div class="exp-content">
+        <h3>Technicien Administrateur Systèmes</h3>
+        <p>Diagnostic et remise en service d'un serveur physique Dell PowerEdge R710 : lecture des LEDs d'erreur, identification des caractéristiques matérielles, évaluation de la compatibilité GPU.</p>
+        <p>Installation d'Ubuntu Server depuis une clé USB bootable. Rédaction d'une étude de faisabilité comparative : automatisation via N8N vs déploiement d'un modèle d'IA locale.</p>
+        <p>Audit et inventaire complet du parc informatique étudiant : recensement, état du matériel, identification des machines hors service.</p>
+        <div class="tags">
+          <span class="tag">Ubuntu Server</span><span class="tag">Dell PowerEdge</span>
+          <span class="tag">Asset Management</span><span class="tag">IA locale</span><span class="tag">N8N</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="exp-item">
+      <div class="exp-meta">
         <div class="exp-date">Mars – Août 2025</div>
         <div class="exp-company">Allianz France</div>
         <div class="exp-location">Paris, France</div>
       </div>
       <div class="exp-content">
         <h3>Data Analyst</h3>
-        <p>Direction Pricing, Pilotage, Performance et Data – Unité ABR.</p>
-        <p>Refonte et optimisation d'un script de calcul d'indicateurs de SAS/SQL vers Python. Automatisation de l'alimentation des résultats dans Excel et intégration de visualisations Power BI pour les équipes métier.</p>
-        <p>Participation à la mise en conformité des traitements avec les exigences de sécurité : anonymisation, gestion des accès, intégrité des données. Rédaction d'une documentation technique complète du pipeline.</p>
+        <p>Direction Pricing, Pilotage, Performance et Data — Unité ABR.</p>
+        <p>Analyses sur la qualité des données, refonte et optimisation d'un script de calcul d'indicateurs (migration SAS/SQL vers Python). Automatisation de l'alimentation des résultats dans Excel et intégration de visualisations Power BI pour les équipes métier.</p>
+        <p>Participation à la mise en conformité avec les exigences de sécurité : anonymisation, gestion des accès, intégrité des données. Rédaction d'une documentation technique complète du pipeline.</p>
         <div class="tags">
           <span class="tag">Python</span><span class="tag">Pandas</span><span class="tag">PySpark</span>
           <span class="tag">SAS</span><span class="tag">SQL</span><span class="tag">Power BI</span>
-          <span class="tag">Azure</span><span class="tag">Cybersécurité</span>
+          <span class="tag">Azure</span><span class="tag">RGPD</span>
         </div>
       </div>
     </div>
@@ -413,10 +425,10 @@
       <div class="exp-content">
         <h3>Data Analyst (Stage)</h3>
         <p>Direction Data et Tech.</p>
-        <p>Analyse des besoins utilisateurs pour la conception de tableaux de bord KPI. Structuration et automatisation du flux de collecte, traitement et stockage de données. Développement de rapports interactifs sous Power BI.</p>
+        <p>Analyse des besoins utilisateurs métier et conception de tableaux de bord adaptés aux KPI. Structuration et automatisation du flux de collecte, traitement et stockage de données (sources SQL internes et externes). Développement de rapports interactifs sous Power BI.</p>
         <div class="tags">
           <span class="tag">Power BI</span><span class="tag">SQL</span><span class="tag">Python</span>
-          <span class="tag">Numpy</span><span class="tag">Matplotlib</span><span class="tag">Pandas</span>
+          <span class="tag">Pandas</span><span class="tag">Matplotlib</span>
         </div>
       </div>
     </div>
@@ -424,150 +436,125 @@
   </div>
 </section>
 
-<!-- 03 — AUTRES EXPÉRIENCES -->
+<!-- 03 — PROJETS & RÉALISATIONS -->
 <section>
   <div class="section-header">
     <span class="section-num">03 —</span>
-    <h2>Autres expériences</h2>
-  </div>
-  <div class="exp-list">
-
-    <div class="exp-item">
-      <div class="exp-meta">
-        <div class="exp-date">Nov. 2025 – Présent</div>
-        <div class="exp-company">Le Patio Opéra</div>
-        <div class="exp-location">Paris, France</div>
-      </div>
-      <div class="exp-content">
-        <h3>Responsable Barman</h3>
-        <p>Gestion du service bar, coordination d'équipe et relation client dans un environnement dynamique et exigeant.</p>
-      </div>
-    </div>
-
-    <div class="exp-item">
-      <div class="exp-meta">
-        <div class="exp-date">Oct. 2024 – Sept. 2025</div>
-        <div class="exp-company">The Versailles</div>
-        <div class="exp-location">Paris, France</div>
-      </div>
-      <div class="exp-content">
-        <h3>Barman</h3>
-        <p>Service bar et accueil clientèle dans un établissement parisien de standing.</p>
-      </div>
-    </div>
-
-  </div>
-</section>
-
-<!-- 04 — PROJETS & RÉALISATIONS -->
-<section style="background: var(--surface);">
-  <div class="section-header">
-    <span class="section-num">04 —</span>
-    <h2>Projets & réalisations</h2>
+    <h2>Projets &amp; réalisations</h2>
   </div>
   <div class="projects-grid">
 
     <div class="project-card">
-      <h3>Fil Rouge — Modernisation d'infrastructure</h3>
-      <p>Projet scolaire en cours. Modernisation complète des infrastructures d'une entreprise lors de son déménagement entre Genève et Paris.</p>
-      <div class="tags"><span class="tag">Réseau</span><span class="tag">Windows Server</span><span class="tag">Active Directory</span></div>
+      <h3>SOC distribué — Projet fil rouge CYNA</h3>
+      <p>Déploiement d'un SOC complet sur infrastructure hybride (VMware local + Azure) : SIEM/EDR Wazuh, PKI complète (CA, certificats ECDSA), serveur OpenVPN et pare-feu pfSense. Architecture multi-sites Paris / Genève avec segmentation VLAN.</p>
+      <p>5 règles de détection MITRE ATT&amp;CK personnalisées validées par Red Team en moins de 3 secondes. Chef de projet — coordination d'une équipe de 4 (Sécurité, Réseau, Virtualisation).</p>
+      <div class="tags">
+        <span class="tag">Wazuh</span><span class="tag">PKI</span><span class="tag">OpenVPN</span>
+        <span class="tag">pfSense</span><span class="tag">Kali Linux</span><span class="tag">MITRE ATT&amp;CK</span>
+        <span class="tag">Azure</span><span class="tag">VMware</span>
+      </div>
     </div>
 
     <div class="project-card">
-      <h3>Sécurisation d'un SI d'entreprise</h3>
-      <p>Évaluation de l'architecture, identification des risques, mesures physiques et logiques, analyse comparative des schémas de sauvegarde.</p>
-      <div class="tags"><span class="tag">Cybersécurité</span><span class="tag">Audit</span><span class="tag">Pare-feu</span></div>
+      <h3>DAMAVIS — Plateforme SaaS</h3>
+      <p>Fondateur et développeur d'une plateforme de gestion de réputation en ligne pour restaurants. Filtrage intelligent des avis Google via QR code : redirection des clients satisfaits (4-5★) vers Google, captation privée des avis négatifs.</p>
+      <p>Stack : JavaScript, Supabase (base de données + authentification). Sécurisation des accès et conformité RGPD.</p>
+      <div class="tags">
+        <span class="tag">JavaScript</span><span class="tag">Supabase</span>
+        <span class="tag">SaaS</span><span class="tag">RGPD</span><span class="tag">QR Code</span>
+      </div>
     </div>
 
     <div class="project-card">
-      <h3>Refonte & optimisation de scripts</h3>
-      <p>Migration d'un script de calcul d'indicateurs qualité de SAS/SQL vers Python. Automatisation Excel et visualisations Power BI.</p>
-      <div class="tags"><span class="tag">Python</span><span class="tag">SAS</span><span class="tag">SQL</span><span class="tag">Power BI</span></div>
+      <h3>Infrastructure PKI &amp; OpenVPN Azure</h3>
+      <p>Mise en place d'une infrastructure à clés publiques complète : autorité de certification, émission de certificats ECDSA. Déploiement d'un serveur OpenVPN sur Azure pour sécuriser les communications inter-sites.</p>
+      <div class="tags">
+        <span class="tag">PKI</span><span class="tag">ECDSA</span><span class="tag">OpenVPN</span><span class="tag">Azure</span>
+      </div>
     </div>
 
     <div class="project-card">
-      <h3>Application gestion notes & absences</h3>
-      <p>Conception BDD et développement complet selon un cycle en V. Sécurisation et automatisation des traitements de données.</p>
-      <div class="tags"><span class="tag">Oracle SQL</span><span class="tag">Eclipse IDE</span><span class="tag">Cycle en V</span></div>
+      <h3>Migration SAS/SQL → Python — Allianz</h3>
+      <p>Refonte complète d'un script de calcul d'indicateurs qualité données. Automatisation Excel et création de visualisations Power BI. Mise en conformité sécurité (anonymisation, gestion des accès, intégrité).</p>
+      <div class="tags">
+        <span class="tag">Python</span><span class="tag">SAS</span><span class="tag">SQL</span><span class="tag">Power BI</span>
+      </div>
     </div>
 
   </div>
 </section>
 
-<!-- 05 — DIPLÔMES & FORMATIONS -->
-<section>
+<!-- 04 — DIPLÔMES & FORMATIONS -->
+<section style="background: var(--surface);">
   <div class="section-header">
-    <span class="section-num">05 —</span>
-    <h2>Diplômes & formations</h2>
+    <span class="section-num">04 —</span>
+    <h2>Diplômes &amp; formations</h2>
   </div>
   <div class="edu-list">
 
     <div class="edu-item">
       <div class="edu-date">2024 – 2026</div>
       <div class="edu-content">
-        <h3>Bachelor Cybersécurité</h3>
-        <div class="institution">INGETIS — École d'informatique</div>
-        <div class="location">62 bis rue Gay-Lussac, 75005 Paris, France</div>
+        <h3>Cybersécurité — Spécialisation SR / Cybersécurité</h3>
+        <div class="institution">INGETIS Paris — École d'informatique</div>
+        <div class="edu-detail">Protection des systèmes, gestion des vulnérabilités, cryptographie, Windows Server, Active Directory, Linux, virtualisation, réseaux et infrastructures.</div>
       </div>
     </div>
 
     <div class="edu-item">
       <div class="edu-date">2022 – 2024</div>
       <div class="edu-content">
-        <h3>Classe Préparatoire Scientifique MP</h3>
-        <div class="institution">Notre-Dame de Grâce</div>
-        <div class="location">Maubeuge, France — Mathématiques, Statistiques & Programmation</div>
-      </div>
-    </div>
-
-    <div class="edu-item">
-      <div class="edu-date">2022 – 2023</div>
-      <div class="edu-content">
-        <h3>Faculté Informatique</h3>
-        <div class="institution">Université de Valenciennes</div>
-        <div class="location">Campus Mont Houy, 59313 Valenciennes, France</div>
+        <h3>Classe Préparatoire Scientifique MP (Maths-Physique)</h3>
+        <div class="institution">Lycée Notre-Dame de Grâce — Maubeuge</div>
+        <div class="edu-detail">Formation approfondie en mathématiques (algèbre linéaire, analyse, probabilités), physique (mécanique, électromagnétisme, thermodynamique) et informatique (algorithmique, structures de données, Python). Rigueur scientifique et capacité d'auto-formation intensives.</div>
       </div>
     </div>
 
     <div class="edu-item">
       <div class="edu-date">2020 – 2022</div>
       <div class="edu-content">
-        <h3>Faculté des Sciences Physiques</h3>
-        <div class="institution">Université de Douala</div>
-        <div class="location">Douala, Cameroun</div>
+        <h3>Licence Physique L1 &amp; L2</h3>
+        <div class="institution">Université de Douala — Cameroun</div>
+        <div class="edu-detail">Physique générale, mécanique quantique, optique, électronique, mathématiques appliquées et méthodes numériques.</div>
       </div>
     </div>
 
     <div class="edu-item">
-      <div class="edu-date">2019 – 2020</div>
+      <div class="edu-date">Juillet 2020</div>
       <div class="edu-content">
         <h3>Baccalauréat Scientifique</h3>
-        <div class="institution">Collège La Conquête</div>
-        <div class="location">Douala, Cameroun</div>
+        <div class="institution">Collège La Conquête — Douala, Cameroun</div>
+        <div class="edu-detail">Mention : spécialité mathématiques et sciences physiques.</div>
       </div>
     </div>
 
   </div>
 </section>
 
-<!-- 06 — LOISIRS -->
-<section style="background: var(--surface);">
+<!-- 05 — LOISIRS -->
+<section>
   <div class="section-header">
-    <span class="section-num">06 —</span>
+    <span class="section-num">05 —</span>
     <h2>Loisirs</h2>
   </div>
   <div class="loisirs-grid">
 
     <div class="loisir-card">
-      <div class="loisir-icon">🏀</div>
+      
       <h3>Basketball</h3>
-      <p>Pratique compétitive au sein de UV Douala (2021). Sport d'équipe favorisant esprit de cohésion, discipline et dépassement de soi.</p>
+      <p>Pratique compétitive au sein de UV Douala et Notre-Dame de Grâce. Sport d'équipe favorisant esprit de cohésion, discipline et dépassement de soi.</p>
     </div>
 
     <div class="loisir-card">
-      <div class="loisir-icon">🤝</div>
+      
+      <h3>Création de cocktails</h3>
+      <p>Passion pour la mixologie et la création de recettes originales. Sens du détail, de la créativité et de la précision — des qualités que j'applique aussi dans mes projets techniques.</p>
+    </div>
+
+    <div class="loisir-card">
+      
       <h3>Activités associatives</h3>
-      <p>Aide aux personnes âgées via le réseau PAM. Engagement bénévole et sens du service au cœur de mon parcours personnel.</p>
+      <p>Aide aux personnes âgées via le réseau PAM de Maubeuge. Engagement bénévole et sens du service au cœur de mon parcours personnel.</p>
     </div>
 
   </div>
@@ -576,8 +563,7 @@
 <!-- FOOTER -->
 <footer>
   <div class="name">Glyne Ngongang</div>
-  <div class="copy">Île-de-France · Français & Anglais · Disponible pour stage / alternance</div>
-  <a href="mailto:ngongangdjomo@gmail.com" class="cta-link">Me contacter →</a>
+  <div class="copy">Île-de-France · Français (natif) · Anglais B2 · Disponible pour poursuite d'études &amp; alternance</div>
 </footer>
 
 </body>
